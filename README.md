@@ -76,5 +76,5 @@ Bu proje açık kaynak değildir. Tüm hakları Poyraz Alkan’a aittir. Detayla
 
 Her türlü lisanslama ve ticari kullanım talebi için:
 
-📧 **Email:** \[[your-email@example.com](mailto:your-email@example.com)]
+📧 **Email:** \[[poyrazdaka@gmail.com](mailto:poyrazdaka@gmail.com)]
 
