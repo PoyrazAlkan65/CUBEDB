@@ -1,6 +1,3 @@
-# CUBEDB
-
-
 # cubeDB
 
 > **cubeDB**,  Çok Boyutlu Vektor Destekli Bellek İçi Veri Küpleri Oluşturmayı ve Yönetmeyi Sağlayan Yeni Nesil Veri Tabanıdır. Amaç Çok boyutlu, versiyonlanabilir, yüksek performanslı bir bellek içi veri yapısıoluşturmaktır. JavaScript ile geliştirilmiş olup yapay zeka projelerinde, hızlı önbellekleme ihtiyaçlarında ve zaman bazlı veri yönetimi senaryolarında kullanılmak üzere tasarlanmıştır.
