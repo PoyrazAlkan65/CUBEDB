@@ -1,7 +1,8 @@
 
 // test/test.redisAdapter.js
+import chai from 'chai';
+const { expect } = chai;
 
-const { expect } = require('chai');
 const RedisAdapter = require('../adapters/adapterRedis');
 const CubeCore = require('../src/coreCUBE');
 require('dotenv').config();

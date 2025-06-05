@@ -7,12 +7,17 @@ class RedisAdapter {
   constructor() {
     const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
     const redisAuth = process.env.REDIS_AUTH;
-
-    this.client = redis.createClient({
-      url: redisUrl,
-      password: redisAuth
-    });
-
+    if (process.env.REDIS_AUTH && process.env.REDIS_AUTH != "NO_PASSWORD") {
+      this.client = redis.createClient({
+        url: redisUrl,
+        password: redisAuth
+      });
+    }
+    else {
+      this.client = redis.createClient({
+        url: redisUrl
+      });
+    }
     this.client.connect().catch(console.error);
   }
 
