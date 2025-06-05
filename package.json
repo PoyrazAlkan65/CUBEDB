@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.5.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "redis": "^5.5.5"
+  }
+}
