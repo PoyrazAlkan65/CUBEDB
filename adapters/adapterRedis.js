@@ -1,4 +1,4 @@
-// adapters/redisAdapter.js
+// adapters/adapterRedis.js
 
 const redis = require('redis');
 require('dotenv').config();
