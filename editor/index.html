@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vector 3D Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Vector 3D Editor & Görselleştirici</h1>
+
+    <label>X Vektörü:</label>
+    <textarea id="vectorX" placeholder="Örnek: 1,2,3,4,5"></textarea>
+
+    <label>Y Vektörü:</label>
+    <textarea id="vectorY" placeholder="Örnek: 1,2,3,4,5"></textarea>
+
+    <label>Z Vektörü:</label>
+    <textarea id="vectorZ" placeholder="Örnek: 1,2,3,4,5"></textarea>
+
+    <div class="buttons">
+      <button onclick="plotVector()">Çiz</button>
+      <button onclick="applyTransform('normalize')">Normalize Et</button>
+      <button onclick="applyTransform('zscore')">Z-Score Normalize Et</button>
+      <button onclick="applyTransform('softmax')">Softmax Uygula</button>
+    </div>
+
+    <div id="plot3d"></div>
+  </div>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>
