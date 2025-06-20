@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -31,16 +30,16 @@ body {
   color: black;
   min-width: 200px;
   z-index: 1;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   padding: 5px 0;
 }
 
-.dropdown > div {
+.dropdown>div {
   padding: 8px 16px;
   cursor: pointer;
 }
 
-.dropdown > div:hover {
+.dropdown>div:hover {
   background-color: #f1f1f1;
 }
 
@@ -56,7 +55,9 @@ body {
 
 .editor-content {
   padding: 20px;
+  width: 100%;
 }
+
 /* Logo CUBEDB */
 .logo {
   position: relative;
@@ -81,29 +82,107 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 45%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 55%
-  ); /* İnce ışık çizgisi */
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 55%);
+  /* İnce ışık çizgisi */
   transform: skewX(-20deg);
   animation: shine 2.5s infinite;
   mix-blend-mode: screen;
   pointer-events: none;
 }
+
 .logo a {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(to bottom, #ff7300, #ffae42);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.source-list,
+.tools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.source-item,
+.tool-item {
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.source-item:hover,
+.tool-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-sub {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+ .main-display {
+    flex-grow: 1;
+    padding: 16px;
+    overflow: auto;
+  }
+
+  .toolbar {
+    margin-bottom: 12px;
+  }
+
+  .toolbar button {
+    margin-right: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .data-view table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .data-view th, .data-view td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  #cubeContainer {
+    width: 100%;
+    height: 500px;
+  }
 @keyframes shine {
   0% {
     left: -100%;
   }
+
   100% {
     left: 100%;
   }
 }
-

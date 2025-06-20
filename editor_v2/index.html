@@ -55,7 +55,9 @@
         <div>MongoDB Kaynağı Ekle</div>
         <div>Redis Kaynağı Ekle</div>
         <div>HazelCast Kaynağı Ekle</div>
-        <div aria-disabled="true"><hr></div>
+        <div aria-disabled="true">
+          <hr>
+        </div>
         <div>Veri Şeması Oluştur (DBML)</div>
         <div>Gözcü Ekle</div>
         <div>Gözcü Kaldır</div>
@@ -66,8 +68,8 @@
         <div>Veri Ayıkla</div>
         <div>Veri Düzenle</div>
         <div>Veri Ekle</div>
-        
-        
+
+
 
       </div>
     </div>
@@ -87,11 +89,60 @@
     </div>
 
   </div>
+  <!-- leftSidebar.html -->
+  <div class="app-container">
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Veri Kaynakları</h2>
+      <ul class="source-list">
+        <li class="source-item">Oracle</li>
+        <li class="source-item">MS SQL</li>
+        <li class="source-item">PostgreSQL</li>
+        <li class="source-item">MongoDB</li>
+        <li class="source-item">Redis</li>
+        <li class="source-item">Hazelcast</li>
+      </ul>
+      <h3 class="sidebar-sub">Araçlar</h3>
+      <ul class="tools-list">
+        <li class="tool-item">Veri Şeması Oluştur</li>
+        <li class="tool-item">Gözcü Ekle</li>
+        <li class="tool-item">Gözcü Kaldır</li>
+        <li class="tool-item">Tetikleyici Oluştur</li>
+      </ul>
+    </aside>
+    <div class="editor-content">
+      <div class="main-display">
+        <div class="toolbar">
+          <button id="tableViewBtn">Tablo Görünüm</button>
+          <button id="cubeViewBtn">3D Küp Görünüm</button>
+        </div>
 
-  <div class="editor-content">
-    <h2>AI Vector & Data Editor</h2>
-    <p>Hoşgeldiniz. Menüleri kullanarak işlemlerinizi başlatabilirsiniz.</p>
+        <div id="tableView" class="data-view">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Ad</th>
+                <th>Değer</th>
+                <th>Katman</th>
+              </tr>
+            </thead>
+            <tbody id="dataTableBody">
+              <!-- JS ile doldurulacak -->
+            </tbody>
+          </table>
+        </div>
+
+        <div id="cubeView" class="data-view" style="display: none;">
+          <div id="cubeContainer">
+            <!-- 3D Küp Plotly ile buraya çizilecek -->
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
+
+
 
   <script src="editor.js"></script>
 </body>
